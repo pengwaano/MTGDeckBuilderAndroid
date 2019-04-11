@@ -30,6 +30,6 @@ object ModelMapper {
 
     fun to(mtgCard: MtgCard): Card {
         return Card(mtgCard.id!!, mtgCard.name, convertList(mtgCard.names), mtgCard.manaCost, mtgCard.cmc, convertList(mtgCard.colors), convertList(mtgCard.colorIdentity), mtgCard.type, convertList(mtgCard.supertypes), convertList(mtgCard.types), convertList(mtgCard.subtypes), mtgCard.rarity,
-            mtgCard.set, mtgCard.setName, mtgCard.text, mtgCard.artist, mtgCard.number, mtgCard.power, mtgCard.toughness, mtgCard.loyalty, mtgCard.multiverseid, mtgCard.imageUrl, mtgCard.layout)
+            mtgCard.set, mtgCard.setName, mtgCard.text, mtgCard.artist, mtgCard.number, mtgCard.power, mtgCard.toughness, mtgCard.loyalty.toString(), mtgCard.multiverseid, mtgCard.imageUrl, mtgCard.layout)
     }
 }

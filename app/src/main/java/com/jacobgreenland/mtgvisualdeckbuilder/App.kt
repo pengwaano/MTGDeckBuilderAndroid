@@ -10,7 +10,8 @@ class App : Application() {
         Realm.init(this)
 
         var config = RealmConfiguration.Builder()
-            .deleteRealmIfMigrationNeeded()
+            .assetFile("default.realm")
+            .name("default.realm")
             .schemaVersion(1)
             .build()
         Realm.setDefaultConfiguration(config)

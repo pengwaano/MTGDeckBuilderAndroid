@@ -24,7 +24,7 @@ open class Card(
     var number: String? = null,
     var power: String? = null,
     var toughness: String? = null,
-    var loyalty: Int? = null,
+    var loyalty: String? = null,
     var multiverseid: Int? = null,
     var imageUrl: String? = null,
     var layout: String = ""
